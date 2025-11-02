@@ -650,4 +650,22 @@
     ],
     "sha256": "58a3ea2e7499bdd558c207e81dd817c60f3918f7eed5010e549a67c6e94dc26f"
   }
+,
+  {
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "chat_template": "{% if messages[0]['role'] == 'system' %}{% set system_message = messages[0]['content'] %}{% endif %}{% if system_message is defined %}{{ '<|im_start|>system\n' + system_message + '<|im_end|>\n' }}{% endif %}{% for message in messages %}{% set content = message['content'] %}{% if message['role'] == 'user' %}{{ '<|im_start|>user\n' + content + '<|im_end|>\n<|im_start|>assistant\n' }}{% elif message['role'] == 'assistant' %}{{ content + '<|im_end|>' + '\n' }}{% endif %}{% endfor %}",
+    "name": "Luau-Qwen3-4B-FIM",
+    "provider_url": "https://huggingface.co/mradermacher/Luau-Qwen3-4B-FIM-v0.1-i1-GGUF",
+    "urls": [
+      "https://huggingface.co/mradermacher/Luau-Qwen3-4B-FIM-v0.1-i1-GGUF/resolve/main/Luau-Qwen3-4B-FIM-v0.1.i1-Q6_K.gguf"
+    ],
+    "sha256": "30d99cfcc03a1d2476d0bff1ca62fd60a57b5a6be2345183b296bb4ceff28754"
+  }
+
+
+
+
+
+  
 ]
