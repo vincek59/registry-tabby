@@ -638,5 +638,16 @@
       "https://huggingface.co/wsxiaoys/Yi-Coder-9B-Chat-Q8_0-GGUF/resolve/main/yi-coder-9b-chat-q8_0.gguf"
     ],
     "sha256": "23b4408c9a621bc563ed9f998a7929776ba50f5102ed2c2436b2f917404b05e7"
+  },
+  {
+    "license_name": "Apache 2.0",
+    "license_url": "https://choosealicense.com/licenses/apache-2.0/",
+    "chat_template": "{% if messages[0]['role'] == 'system' %}{% set system_message = messages[0]['content'] %}{% endif %}{% if system_message is defined %}{{ '<|im_start|>system\n' + system_message + '<|im_end|>\n' }}{% endif %}{% for message in messages %}{% set content = message['content'] %}{% if message['role'] == 'user' %}{{ '<|im_start|>user\n' + content + '<|im_end|>\n<|im_start|>assistant\n' }}{% elif message['role'] == 'assistant' %}{{ content + '<|im_end|>' + '\n' }}{% endif %}{% endfor %}",
+    "name": "Granite4-1B",
+    "provider_url": "https://huggingface.co/ibm-granite/granite-4.0-1b-base",
+    "urls": [
+      "https://cas-bridge.xethub.hf.co/xet-bridge-us/6900a44fa9be0f9b578f140d/da8fe35683ca1f65a07b6a75c08b98b69b0fc77aa06eb25d5d87677aa204e091?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cas%2F20251102%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251102T110517Z&X-Amz-Expires=3600&X-Amz-Signature=72ca422164ee0cade46530e91638f3b986f2aa968351686ac1f3a35133e46832&X-Amz-SignedHeaders=host&X-Xet-Cas-Uid=public&response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27granite-4.0-1b-UD-Q8_K_XL.gguf%3B+filename%3D%22granite-4.0-1b-UD-Q8_K_XL.gguf%22%3B&x-id=GetObject&Expires=1762085117&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc2MjA4NTExN319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2FzLWJyaWRnZS54ZXRodWIuaGYuY28veGV0LWJyaWRnZS11cy82OTAwYTQ0ZmE5YmUwZjliNTc4ZjE0MGQvZGE4ZmUzNTY4M2NhMWY2NWEwN2I2YTc1YzA4Yjk4YjY5YjBmYzc3YWEwNmViMjVkNWQ4NzY3N2FhMjA0ZTA5MSoifV19&Signature=EODnQdI8O%7Ef-OPI7-c2FpFE1onhvlTKNrAcGOy3J0b5S0PiUca4k8YRtf9-AWxUYy5jSyCjaQEQfwjEoQWjjw8POeWoQD9WkyKmHW%7EBI8ALHpFArtVn3G8cCVWPpT9v4l8gTsuTvd6fWqHhmAZ%7EKC95LYTzd4-3wB4aEbcLwBH-WGH2Uf6PWPaFgJx3HquxWtWdwE203AOMKuQwoiUhg8Du-ptJImGckyiujcAEnDHjVH9ICpyOcTFPhYyFJBPj7pHqQLXXVYy-GMon%7EjkwkAjX2vhR1ZY4qk3KH4AjQW6ODvvTvPR6wfQNnAHv5G-kh0EBTQ%7EKpMQ-YKHsacDvpzg__&Key-Pair-Id=K2L8F4GPSG1IFC"
+    ],
+    "sha256": "df02f09c5cccc5e66bafa4304e0fd96132d88eb3a95fd0aa270875bbc9a199ef"
   }
 ]
