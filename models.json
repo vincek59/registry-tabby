@@ -656,6 +656,7 @@
     "license_url": "https://choosealicense.com/licenses/apache-2.0/",
     "chat_template": "{% if messages[0]['role'] == 'system' %}{% set system_message = messages[0]['content'] %}{% endif %}{% if system_message is defined %}{{ '<|im_start|>system\n' + system_message + '<|im_end|>\n' }}{% endif %}{% for message in messages %}{% set content = message['content'] %}{% if message['role'] == 'user' %}{{ '<|im_start|>user\n' + content + '<|im_end|>\n<|im_start|>assistant\n' }}{% elif message['role'] == 'assistant' %}{{ content + '<|im_end|>' + '\n' }}{% endif %}{% endfor %}",
     "name": "Luau-Qwen3-4B-FIM",
+    "prompt_template": "<|im_start|>system\nYou are a code completion assistant.<|im_end|>\n<|im_start|>user\n<|repo_name|>{reponame}<|file_sep|>{filename}<|fim_suffix|>{suffix}<|fim_prefix|>{prefix}<|fim_middle|><|im_end|>\n<|im_start|>assistant\n",
     "provider_url": "https://huggingface.co/mradermacher/Luau-Qwen3-4B-FIM-v0.1-i1-GGUF",
     "urls": [
       "https://huggingface.co/mradermacher/Luau-Qwen3-4B-FIM-v0.1-i1-GGUF/resolve/main/Luau-Qwen3-4B-FIM-v0.1.i1-Q6_K.gguf"
@@ -667,6 +668,7 @@
     "license_url": "https://choosealicense.com/licenses/apache-2.0/",
     "chat_template": "{% if messages[0]['role'] == 'system' %}{% set system_message = messages[0]['content'] %}{% endif %}{% if system_message is defined %}{{ '<|im_start|>system\n' + system_message + '<|im_end|>\n' }}{% endif %}{% for message in messages %}{% set content = message['content'] %}{% if message['role'] == 'user' %}{{ '<|im_start|>user\n' + content + '<|im_end|>\n<|im_start|>assistant\n' }}{% elif message['role'] == 'assistant' %}{{ content + '<|im_end|>' + '\n' }}{% endif %}{% endfor %}",
     "name": "Stable-code-3b",
+    "prompt_template": "<|fim_prefix|>{prefix}<|fim_suffix|>{suffix}<|fim_middle|>",
     "provider_url": "https://huggingface.co/stabilityai/stable-code-3b",
     "urls": [
       "https://huggingface.co/stabilityai/stable-code-3b/resolve/main/stable-code-3b.gguf"
