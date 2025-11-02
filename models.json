@@ -8,7 +8,7 @@
     "urls": [
       "https://huggingface.co/unsloth/granite-4.0-h-tiny-GGUF/resolve/main/granite-4.0-h-tiny-Q6_K.gguf"
           ],
-    "sha256": "ea95a6804553f1e2eeb3cc53084926d0f2ed597f6b1fab5dcddb767328762730"
+    "sha256": "db2970d74c05c9058340c47806dc8094e2496e993f5ac977851ac1d9ec5f7ad8"
   },
   {
     "license_name": "BigCode-OpenRAIL-M",
@@ -662,12 +662,6 @@
     ],
     "sha256": "58a3ea2e7499bdd558c207e81dd817c60f3918f7eed5010e549a67c6e94dc26f"
   }
-,
+
  
-
-
-
-
-
-  
 ]
