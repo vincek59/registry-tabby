@@ -646,8 +646,8 @@
     "name": "Granite4-1B",
     "provider_url": "https://huggingface.co/ibm-granite/granite-4.0-1b-base",
     "urls": [
-      "https://huggingface.co/unsloth/granite-4.0-1b-GGUF/resolve/main/granite-4.0-1b-UD-Q8_K_XL.gguf"
+      "https://huggingface.co/unsloth/granite-4.0-1b-GGUF/resolve/main/granite-4.0-1b-UD-Q6_K_XL.gguf"
     ],
-    "sha256": "df02f09c5cccc5e66bafa4304e0fd96132d88eb3a95fd0aa270875bbc9a199ef"
+    "sha256": "58a3ea2e7499bdd558c207e81dd817c60f3918f7eed5010e549a67c6e94dc26f"
   }
 ]
